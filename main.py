@@ -27,7 +27,7 @@ class Application(Frame):
         self.entry02 = Entry(self, textvariable=v2)
         self.entry02.setvar("123")
         self.entry02.pack()
-
+        #测试
         self.btn01 = Button(self, text="LOGIN", command=self.login)
         self.btn01.pack()
 
