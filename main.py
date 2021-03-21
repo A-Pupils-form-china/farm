@@ -33,13 +33,13 @@ class Application(Frame):
 
     def login(self, ):
 
-        username=self.entry01.get()
-        password=self.entry02.get()
+        username = self.entry01.get()
+        password = self.entry02.get()
         print("用户名：" + self.entry01.get())
         print("密码： " + self.entry02.get())
         f = open('test.txt', "r")
         a = f.read().split('\n')
-        if a[0] == username and a[1] == password :
+        if a[0] == username and a[1] == password:
             messagebox.showinfo(self, message="登陆成功")
         else:
             messagebox.showinfo(self, message="登陆失败")
